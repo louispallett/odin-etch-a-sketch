@@ -1,0 +1,74 @@
+*
+{
+    margin: 0;
+    background-color: #A6F0F2;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.header-title
+{
+    font-size: 64px;
+    font-weight: 1000;
+}
+
+.main-body
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 70%;
+}
+
+.left-body
+{
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.selection-panel
+{
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 10%;
+    height: 50%;
+    margin: 10px;
+}
+
+.middle-body
+{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /*This may cause issues with alignment in the future - just in case you don't know why!*/
+}
+
+#grid-container
+{
+    border: 3px solid white;
+    margin: 20px;
+}
+
+.grid
+{
+    border: none;
+    outline: 1px solid black;
+}
+
+.right-body
+{
+    display: flex;
+    width: 25%;
+}
