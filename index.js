@@ -9,13 +9,11 @@ function createGrid(x)
         gridItem.classList.toggle(("grid-item"));
         for (let columns = 0; columns < size; columns++) 
         {
-            gridContainer.appendChild(gridItem);
+            gridContainer.append(gridItem);
         }
-        gridItem.setAttribute("style", `width: ${960/(x * 2)}px; height: ${960/(x * 2)}px`);
+        gridItem.setAttribute("style", `width: ${960/x}px; height: ${960/x}px`);
     }
 };
 
 
-createGrid(8);
-
-   
+createGrid(16);

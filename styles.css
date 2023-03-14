@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 10px;
 }
 
@@ -31,7 +31,7 @@
 .left-body
 {
     display: flex;
-    width: 25%;
+    width: 20%;
     justify-content: flex-end;
     align-items: center;
 }
@@ -48,36 +48,26 @@
 .middle-body
 {
     display: flex;
-    width: 50%;
+    width: 960px;
     justify-content: center;
     align-items: center;
     margin: 10px; /*This may cause issues with alignment in the future - just in case you don't know why!*/
 }
 
 #grid-container
-{
-	position: relative;
-	top: 30px;
-	outline:2px solid #000;
+{   
 	font-size: 0;
-	margin: auto;
-	padding: 0;
-	border: none;
-    width: auto;
+    outline: 5px solid black;
 }
 
 .grid-item
 {
-	margin: 0;
-	padding: 0;
-	border: none;
 	outline: 1px solid #000;
 	display: inline-block;
-    flex-grow: 0;
 }
 
 .right-body
 {
     display: flex;
-    width: 25%;
+    width: 20%;
 }
