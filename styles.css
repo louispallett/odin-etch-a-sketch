@@ -3,7 +3,6 @@
     margin: 0;
     background-color: #A6F0F2;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 .header
@@ -42,8 +41,8 @@
     border: 3px solid white;
     padding: 20px;
     border-radius: 10%;
-    height: 50%;
-    margin: 10px;
+    height: 50%; /*redundant once text put in*/
+    margin: 20px;
 }
 
 .middle-body
@@ -57,14 +56,24 @@
 
 #grid-container
 {
-    border: 3px solid white;
-    margin: 20px;
+	position: relative;
+	top: 30px;
+	outline:2px solid #000;
+	font-size: 0;
+	margin: auto;
+	padding: 0;
+	border: none;
+    width: auto;
 }
 
-.grid
+.grid-item
 {
-    border: none;
-    outline: 1px solid black;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: 1px solid #000;
+	display: inline-block;
+    flex-grow: 0;
 }
 
 .right-body
