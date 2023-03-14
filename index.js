@@ -11,7 +11,7 @@ function createGrid(x)
         {
             gridContainer.append(gridItem);
         }
-        gridItem.setAttribute("style", `width: ${960/x}px; height: ${960/x}px`);
+        gridItem.setAttribute("style", `width: ${720/x}px; height: ${720/x}px`);
     }
 };
 
