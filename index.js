@@ -17,3 +17,17 @@ function createGrid(x)
 
 
 createGrid(16);
+
+let colour = "purple";
+
+//Select grid container (originally used gridItem, but this didn't work)
+const gridContainer = document.querySelector("#grid-container");
+
+//this creates the event by hovering over the grid-item
+gridContainer.addEventListener("mouseover", (event) =>
+{
+    //target the background colour (note, this had to be written in camelCase)
+    event.target.style.backgroundColor = colour;
+},
+//note sure whether this is needed - works without it - maybe delete later!
+false);
