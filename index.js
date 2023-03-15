@@ -1,12 +1,13 @@
+const gridContainer = document.querySelector("#grid-container");
+
 // function that builds a grid in the "gridContainer"
 function createGrid(x) 
 {
     let size = (x * x);
     for (let rows = 0; rows < size; rows++) 
     {
-        const gridContainer = document.querySelector("#grid-container");
         const gridItem = document.createElement("div");
-        gridItem.classList.toggle(("grid-item"));
+        gridItem.classList.toggle("grid-item");
         for (let columns = 0; columns < size; columns++) 
         {
             gridContainer.append(gridItem);
@@ -20,14 +21,29 @@ createGrid(16);
 
 let colour = "purple";
 
-//Select grid container (originally used gridItem, but this didn't work)
-const gridContainer = document.querySelector("#grid-container");
-
 //this creates the event by hovering over the grid-item
 gridContainer.addEventListener("mouseover", (event) =>
 {
     //target the background colour (note, this had to be written in camelCase)
     event.target.style.backgroundColor = colour;
+    event.target.style.outline = colour;
 },
-//note sure whether this is needed - works without it - maybe delete later!
+//not sure whether this is needed - works without it - maybe delete later!
 false);
+
+//Create a function which resizes the grid when a button is pressed depending on the font
+
+const gridItem = document.querySelector(".grid-item");
+
+function resizeGrid ()
+{
+    userGridInput = prompt("How many boxes per side (maximum of 100)?", 16);
+
+    function clearGrid()
+    {
+        gridItem.remove()
+    }
+
+    clearGrid();
+    createGrid(userGridInput);
+}

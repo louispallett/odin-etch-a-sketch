@@ -1,12 +1,8 @@
-*
-{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body
 {
     background-color: #A6F0F2;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header
@@ -61,17 +57,29 @@ body
 	font-size: 0;
     outline: 5px solid black;
     flex-basis: 720px;
-    
 }
 
 .grid-item
 {
 	outline: 1px solid #000;
 	display: inline-block;
+    background-color: white;
 }
 
 .right-body
 {
     display: flex;
+    justify-content: flex-start;
     width: auto;
+}
+
+#resize-grid-btn
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
 }
