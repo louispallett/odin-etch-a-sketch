@@ -36,12 +36,12 @@ body
     margin: 10px;
 }
 
-.selection-panel
+/*.selection-panel
 {
     outline: 3px solid white;
     padding: 20px;
     border-radius: 10%;
-}
+}*/
 
 .middle-body
 {
@@ -82,4 +82,5 @@ body
     background-color: white;
     font-weight: bold;
     border-radius: 10px;
+    border-color: white;
 }
